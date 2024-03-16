@@ -29,16 +29,10 @@ class App extends Component {
   };
 
   calculate = () => {
-    var checkResult = ''
-    if(this.state.result.includes('--')) {
-      checkResult = this.state.result.replace('--', '+')
-    } else {
-      checkResult = this.state.result;
-    }
-
     try {
+      let calculatedResult = eval(this.state.result);
       this.setState({
-        result: ""
+        result: String(calculatedResult)
       })
     } catch(e) {
       this.setState({
