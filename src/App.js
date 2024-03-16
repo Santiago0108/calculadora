@@ -29,10 +29,11 @@ class App extends Component {
   };
 
   calculate = () => {
+    
+
     try {
-      let calculatedResult = eval(this.state.result);
       this.setState({
-        result: String(calculatedResult)
+        result: ""
       })
     } catch(e) {
       this.setState({
