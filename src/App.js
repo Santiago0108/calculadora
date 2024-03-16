@@ -45,7 +45,6 @@ class App extends Component {
         result: "error"
       })
     }
-    System.out.printf(checkResult);
   };
 
   reset = () => {
